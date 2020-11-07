@@ -1,0 +1,1 @@
+web: cd day-tracker && npm start
