@@ -1,1 +1,1 @@
-web: cd day-tracker && npm start
+web: cd front && npm start && cd ../back && npm start
