@@ -1,1 +1,1 @@
-web: cd front && npm start && cd ../back && npm start
+web: (cd back && npm install) && (cd front && npm install)
