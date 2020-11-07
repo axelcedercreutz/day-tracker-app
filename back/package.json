@@ -1,6 +1,6 @@
 {
   "name": "back",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "backend for app",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,8 @@
   "author": "Axel Cedercreutz",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "prettier": "^2.1.2"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
@@ -21,7 +22,7 @@
     "mongoose": "^5.10.13",
     "mongoose-unique-validator": "^2.0.3"
   },
-   "jest": {
+  "jest": {
     "testEnvironment": "node"
   }
 }
