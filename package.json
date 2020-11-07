@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Day tracker app",
   "scripts": {
-    "install": "(cd packages/back && npm run start &) && (cd packages/front && npm run start)",
+    "install": "(cd packages/back && npm install &) && (cd packages/front && npm install)",
     "backend": "cd packages/back && npm install",
     "frontend": "cd packages/front && npm install",
     "start": "(cd packages/back && npm run start &) && (cd packages/front && npm run start)",
