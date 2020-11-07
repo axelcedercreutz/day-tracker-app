@@ -1,1 +1,1 @@
-web: npm run install backend
+web: cd packages/back && npm run install
