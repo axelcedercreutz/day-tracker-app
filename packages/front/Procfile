@@ -1,1 +1,1 @@
-web: cd packages/front && npm run install
+web: cd packages/front && npm install

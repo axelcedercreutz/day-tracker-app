@@ -1,1 +1,1 @@
-web: cd packages/back && npm run install
+web: cd packages/back && npm install
