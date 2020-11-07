@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Day tracker app",
   "scripts": {
-    "install": "(cd back && npm install) && (cd front && npm install)",
-    "start": "(cd back && npm run start &) && (cd front && npm run start)",
-    "dev": "(cd back && npm run dev &) && (cd front && npm start)",
+    "install": "(cd packages/back && npm install) && (cd packages/front && npm install)",
+    "start": "(cd packages/back && npm run start &) && (cd packages/front && npm run start)",
+    "dev": "(cd packages/back && npm run dev &) && (cd packages/front && npm start)",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
