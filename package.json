@@ -1,0 +1,20 @@
+{
+  "name": "day-tracker-app",
+  "version": "1.0.0",
+  "description": "Day tracker app",
+  "main": "day-tracker/src/index.js",
+  "scripts": {
+    "install": "cd day-tracker && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axelcedercreutz/day-tracker-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axelcedercreutz/day-tracker-app/issues"
+  },
+  "homepage": "https://github.com/axelcedercreutz/day-tracker-app#readme"
+}
