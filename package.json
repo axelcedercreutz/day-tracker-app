@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Day tracker app",
   "scripts": {
-    "install backend": "cd packages/back && npm install",
-    "install frontend": "cd packages/front && npm install",
+    "install": "(cd packages/back && npm run start &) && (cd packages/front && npm run start)",
+    "backend": "cd packages/back && npm install",
+    "frontend": "cd packages/front && npm install",
     "start": "(cd packages/back && npm run start &) && (cd packages/front && npm run start)",
     "dev": "(cd packages/back && npm run dev &) && (cd packages/front && npm start)",
     "test": "echo \"Error: no test specified\" && exit 1"

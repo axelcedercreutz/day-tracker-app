@@ -1,1 +1,1 @@
-web: cd packages/front && npm install
+web: web: npm run frontend
