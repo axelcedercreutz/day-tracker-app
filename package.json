@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Day tracker app",
   "scripts": {
-    "install": "cd front && npm install",
+    "install": "(cd back && npm install) && (cd front && npm install)",
     "start": "(cd back && npm run start &) && (cd front && npm run start)",
     "dev": "(cd back && npm run dev &) && (cd front && npm start)",
     "test": "echo \"Error: no test specified\" && exit 1"
