@@ -9,7 +9,7 @@
     "start": "(cd packages/back && npm run start &) && (cd packages/front && npm run start)",
     "dev": "(cd packages/back && npm run dev &) && (cd packages/front && npm start)",
     "build:front": "npm --prefix packages/front run build",
-    "build:back": "npm --prefix packages/back run build",
+    "build:back": "npm --prefix packages/back run install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
