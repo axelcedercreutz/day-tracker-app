@@ -38,15 +38,15 @@ app.use(express.json());
 app.use(middleware.requestLogger);
 app.use(middleware.tokenExtractor);
 
+app.use('/api/login', loginRouter);
+//app.use('/api/blogs', blogsRouter);
+app.use('/api/users', usersRouter);
+
 app.use(express.static(path.resolve(__dirname, './build')));
 
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
-
-app.use('/api/login', loginRouter);
-//app.use('/api/blogs', blogsRouter);
-app.use('/api/users', usersRouter);
 
 /*
 if (process.env.NODE_ENV === 'test') {
