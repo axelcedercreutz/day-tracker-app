@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { BASE_URL } from '../../utils/config';
-const baseUrl = BASE_URL + '/api/users';
+const baseUrl = BASE_URL + 'api/users';
 console.log(baseUrl);
 
 const getAll = () => {
@@ -11,6 +11,10 @@ const getAll = () => {
 const createUser = async (username: string, password: string) => {
   const response = await axios.post(baseUrl, { username, password });
   return response.data;
+};
+
+const getUser = (username: string) => {
+  const request = axios.get(baseUrl);
 };
 
 export default { getAll, createUser };
