@@ -13,7 +13,7 @@ const CreateUser = () => {
 
   return (
     <div>
-      <Typography>Hello New User</Typography>
+      <Typography>Hello {user?.username}</Typography>
       <FormControl>
         <TextField
           label="Username"
