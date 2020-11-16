@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { Typography } from '@material-ui/core';
+import { Snackbar, AppBar, Toolbar, Button } from '@material-ui/core';
 import { useCookies } from 'react-cookie';
 import useStore from './providers/state';
 import CreateUser from './components/CreateUser';
 import Login from './components/Login';
+import CalendarView from './components/CalendarView';
 
 const App = () => {
   const [cookies, setCookie, login] = useCookies(['nickname']);
@@ -17,6 +18,18 @@ const App = () => {
       setUser(loggedUser);
     }
   }, []);
+
+  const Headerbar = () => {
+    return (
+      <AppBar position="static">
+        <Toolbar>
+          <Login />
+          <Button color="inherit">Add new entry</Button>
+          <Button color="inherit">Stats</Button>
+        </Toolbar>
+      </AppBar>
+    );
+  };
   return (
     <BrowserRouter>
       <Switch>
@@ -25,8 +38,14 @@ const App = () => {
         </Route>
         <Route path="/">
           <div>
-            <Typography>Hello {user?.username}</Typography>
-            <Login />
+            {user ? (
+              <div>
+                {Headerbar()}
+                <CalendarView />
+              </div>
+            ) : (
+              <Login />
+            )}
           </div>
         </Route>
       </Switch>
